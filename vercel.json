@@ -2,8 +2,6 @@
     "version": 2,
     "builds": [
         {
-            "src": "pip3 install -r requirements.txt",
-            "src": "cp config-template.json config.json",
             "src": "./app.py",
             "use": "@vercel/python"
         }
