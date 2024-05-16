@@ -14,7 +14,9 @@
     ],
     "build": {
         "env": {
-          "VERCEL_BUILD_TIMEOUT": "600"
-        }
+            "VERCEL_BUILD_TIMEOUT": "600",
+            "PIP_INSTALL": "linkai>=0.0.6.0 -i https://pypi.tuna.tsinghua.edu.cn/simple"
+        },
+        "command": "pip3 install $PIP_INSTALL"
     }
 }
