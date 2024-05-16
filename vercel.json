@@ -1,8 +1,5 @@
 {
     "version": 2,
-    "build": {
-    "maxDuration": 600
-  },
     "builds": [
         {
             "src": "./app.py",
@@ -14,5 +11,10 @@
             "src": "/(.*)",
             "dest": "/app.py"
         }
-    ]
+    ],
+    "build": {
+        "env": {
+          "VERCEL_BUILD_TIMEOUT": "600"
+        }
+    }
 }
