@@ -40,6 +40,9 @@ def start_channel(channel_name: str):
             pass
     channel.startup()
 
+class handler(BaseHTTPRequestHandler):
+    def do_GET(self):
+        pass
 
 def run():
     try:
@@ -66,9 +69,6 @@ def run():
     except Exception as e:
         logger.error("App startup failed!")
         logger.exception(e)
-
-class handler(BaseHTTPRequestHandler):
-    def do_GET(self):
 
 run()
 
