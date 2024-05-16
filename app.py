@@ -69,16 +69,6 @@ def run():
 
 class handler(BaseHTTPRequestHandler):
     def do_GET(self):
-        try:
-            # Your application logic here
-            # run()
-
-            # Sending response
-
-        except Exception as e:
-            # Handle any exceptions and log them
-            #logger.error("An error occurred: {}".format(str(e)))
-            pass
 
 run()
 
