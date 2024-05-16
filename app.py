@@ -1,6 +1,17 @@
 # encoding:utf-8
 
 import os
+import subprocess
+
+def install_linkai():
+    # 使用清华源安装 linkai 库，并指定版本
+    subprocess.run([
+        'pip3', 'install', '-i', 'https://pypi.tuna.tsinghua.edu.cn/simple',
+        'linkai>=0.0.6.0'
+    ], check=True)
+
+# 在适当的地方调用函数来安装 linkai
+install_linkai()
 import signal
 import sys
 import time
