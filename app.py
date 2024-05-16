@@ -67,6 +67,8 @@ def run():
         logger.error("App startup failed!")
         logger.exception(e)
 
+def handler(event, context):
+    run()
 
 if __name__ == "__main__":
     run()
