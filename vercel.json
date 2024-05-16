@@ -1,5 +1,8 @@
 {
     "version": 2,
+    "build": {
+    "maxDuration": 600
+  },
     "builds": [
         {
             "src": "./app.py",
