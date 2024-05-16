@@ -1,11 +1,6 @@
 # encoding:utf-8
 
 import os
-import subprocess
-
-# 安装依赖
-subprocess.run(['pip3', 'install', '-r', 'requirements.txt'], check=True)
-
 import signal
 import sys
 import time
