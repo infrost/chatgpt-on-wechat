@@ -68,7 +68,19 @@ def run():
         logger.exception(e)
 
 class handler(BaseHTTPRequestHandler):
-    run()
+    def do_GET(self):
+        try:
+            # Your application logic here
+            run()
+
+            # Sending response
+            self.send_response(200)
+            self.send_header('Content-type', 'text/plain')
+            self.end_headers()
+            self.wfile.write('Hello, world!'.encode('utf-8'))
+        except Exception as e:
+            # Handle any exceptions and log them
+            logger.error("An error occurred: {}".format(str(e)))
 
 if __name__ == "__main__":
     run()
