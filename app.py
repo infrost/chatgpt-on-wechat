@@ -5,11 +5,11 @@ import os
 import signal
 import sys
 import time
-
+from http.server import BaseHTTPRequestHandler
 from channel import channel_factory
 from common import const
 from config import load_config
-from plugins import *
+# from plugins import *
 import threading
 
 
@@ -67,7 +67,7 @@ def run():
         logger.error("App startup failed!")
         logger.exception(e)
 
-def handler():
+class handler(BaseHTTPRequestHandler):
     run()
 
 if __name__ == "__main__":
