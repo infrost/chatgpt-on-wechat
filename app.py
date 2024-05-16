@@ -40,10 +40,6 @@ def start_channel(channel_name: str):
             pass
     channel.startup()
 
-class handler(BaseHTTPRequestHandler):
-    def do_GET(self):
-        pass
-
 def run():
     try:
         # load config
@@ -72,7 +68,10 @@ def run():
 
 run()
 
-
+class handler(BaseHTTPRequestHandler):
+    def do_GET(self):
+        pass
+        
 #if __name__ == "__main__":
 #    run()
 
