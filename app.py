@@ -71,7 +71,7 @@ class handler(BaseHTTPRequestHandler):
     def do_GET(self):
         try:
             # Your application logic here
-            run()
+            # run()
 
             # Sending response
 
@@ -83,6 +83,6 @@ class handler(BaseHTTPRequestHandler):
 run()
 
 
-if __name__ == "__main__":
-    run()
+#if __name__ == "__main__":
+#    run()
 
