@@ -76,6 +76,6 @@ class handler(BaseHTTPRequestHandler):
         self.wfile.write('Hello, world!'.encode('utf-8'))
         return
         
-#if __name__ == "__main__":
-#    run()
+if __name__ == "__main__":
+    run()
 
